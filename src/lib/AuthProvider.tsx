@@ -8,9 +8,6 @@ interface AuthContext {
 }
 
 export const AuthContext = createContext<AuthContext>({} as AuthContext);
-
-export const useAuth = () => useContext(AuthContext);
-
 export default function AuthProvider({ children }: { children: ReactNode }) {
 	const [isLogged, setIsLogged] = useState(false);
 	const [accessToken, setAccessToken] = useState("");

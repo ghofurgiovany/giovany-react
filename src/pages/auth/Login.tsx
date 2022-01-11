@@ -1,4 +1,4 @@
-import { useAuth } from "@/services/AuthProvider";
+import { useAuth } from "@/hooks";
 
 function Login() {
 	const { login, logout, isLogged } = useAuth();
